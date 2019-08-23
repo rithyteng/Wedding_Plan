@@ -33,6 +33,9 @@ namespace weddingplan.Models
 
         public List<Response> Responses {get;set;}
 
+        public string WeddingId {get;set;}
+
+
     }
     
     public class Wedding{
@@ -46,19 +49,21 @@ namespace weddingplan.Models
         public string W2{get;set;}
 
         [Required(ErrorMessage="Please Input Your Date")]
+        [DisplayFormat(DataFormatString = "{yyyyMMdd}")]
+        [DataType(DataType.Date)]
         public DateTime Date{get;set;}
 
         [Required(ErrorMessage="Please Input Your Address")]
         public string WeddingAddress {get;set;}
         public List<Response> Guests {get;set;}
 
-        
+        public int UserId {get;set;}
     }
     public class Response{
     [Key]
     public int ResponseId {get;set;}
     
-    public string Guests{get;set;}
+    public String Guests{get;set;}
 
     public Wedding MyWedding{get;set;}
 
@@ -68,4 +73,12 @@ namespace weddingplan.Models
     public int UserId {get;set;}
 
     }
+    public class Login{
+
+        public string Email {get; set;}
+
+        [DataType(DataType.Password)]
+        public string Password { get; set; }
+
+        }
 }

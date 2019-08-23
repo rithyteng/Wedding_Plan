@@ -11,6 +11,11 @@
     <title>Document</title>
 </head>
 <body>
+    @{
+        @if(ViewBag.Home ==true){
+            <a href="/Dashboard/@ViewBag.Id">Home</a>
+        }
+    }
     
     @model User
     <h2>Register</h2>

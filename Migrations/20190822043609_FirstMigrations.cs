@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace weddingplan.Migrations
 {
-    public partial class FirstMigration : Migration
+    public partial class FirstMigrations : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -17,7 +17,8 @@ namespace weddingplan.Migrations
                     FirstName = table.Column<string>(nullable: false),
                     LastName = table.Column<string>(nullable: false),
                     Email = table.Column<string>(nullable: false),
-                    Password = table.Column<string>(nullable: false)
+                    Password = table.Column<string>(nullable: false),
+                    WeddingId = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -33,7 +34,8 @@ namespace weddingplan.Migrations
                     W1 = table.Column<string>(nullable: false),
                     W2 = table.Column<string>(nullable: false),
                     Date = table.Column<DateTime>(nullable: false),
-                    WeddingAddress = table.Column<string>(nullable: false)
+                    WeddingAddress = table.Column<string>(nullable: false),
+                    UserId = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {

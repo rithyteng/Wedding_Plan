@@ -28,3 +28,7 @@
 /Users/rithyteng/Documents/dotNET_stack/weddingplan/obj/Debug/netcoreapp2.2/weddingplan.dll
 /Users/rithyteng/Documents/dotNET_stack/weddingplan/obj/Debug/netcoreapp2.2/weddingplan.pdb
 /Users/rithyteng/Documents/dotNET_stack/weddingplan/obj/Debug/netcoreapp2.2/weddingplan.csproj.CopyComplete
+/Users/rithyteng/Documents/dotNET_stack/weddingplan/obj/Debug/netcoreapp2.2/Razor/Views/Home/Dashboard.g.cshtml.cs
+/Users/rithyteng/Documents/dotNET_stack/weddingplan/obj/Debug/netcoreapp2.2/Razor/Views/Home/Login.g.cshtml.cs
+/Users/rithyteng/Documents/dotNET_stack/weddingplan/obj/Debug/netcoreapp2.2/Razor/Views/Home/MyWedding.g.cshtml.cs
+/Users/rithyteng/Documents/dotNET_stack/weddingplan/obj/Debug/netcoreapp2.2/Razor/Views/Home/WeddingDetail.g.cshtml.cs

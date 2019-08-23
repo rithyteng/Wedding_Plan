@@ -9,8 +9,8 @@ using weddingplan.Models;
 namespace weddingplan.Migrations
 {
     [DbContext(typeof(MyContext))]
-    [Migration("20190822020042_FirstMigration")]
-    partial class FirstMigration
+    [Migration("20190822043609_FirstMigrations")]
+    partial class FirstMigrations
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -56,6 +56,8 @@ namespace weddingplan.Migrations
                     b.Property<string>("Password")
                         .IsRequired();
 
+                    b.Property<string>("WeddingId");
+
                     b.HasKey("UserId");
 
                     b.ToTable("Users");
@@ -67,6 +69,8 @@ namespace weddingplan.Migrations
                         .ValueGeneratedOnAdd();
 
                     b.Property<DateTime>("Date");
+
+                    b.Property<string>("UserId");
 
                     b.Property<string>("W1")
                         .IsRequired();

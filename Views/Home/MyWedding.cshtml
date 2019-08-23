@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/logout">Log Out</a>
+    <a href="/Dashboard/@ViewBag.Id">Dashboard</a>
+    <h2>Plan Your Wedding</h2>
+    
+    @model Wedding
+    <form asp-action="Wedding" asp-controller="Home" method="post">
+        <span asp-validation-for="W1"></span>
+        <label asp-for="W1"></label>
+        <input asp-for="W1">
+        <p></p>
+
+        <span asp-validation-for="W2"></span>
+        <label asp-for="W2"></label>
+        <input asp-for="W2">
+        <p></p>
+
+        <span asp-validation-for="Date"></span>
+        <label asp-for="Date"></label>
+        <input asp-for="Date">
+        <p></p>
+
+        <span asp-validation-for="WeddingAddress"></span>
+        <label asp-for="WeddingAddress"></label>
+        <input asp-for="WeddingAddress">
+        <p></p>
+        
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>

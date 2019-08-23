@@ -8,7 +8,7 @@
 </head>
 <body>
     <h2> Login </h2>
-    @model User
+    @model Login
     <form asp-action="LogIn" asp-controller="Home" method="post">
 
         <span asp-validation-for="Email"></span>
@@ -22,7 +22,7 @@
         <label asp-for="Password"></label>
         <input asp-for="Password">
         <p></p>
-        <button>Submit</button>
+        <button type="submit">Submit</button>
     </form>
 </body>
 </html>
